@@ -3,7 +3,7 @@ import fs from 'fs-extra';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { FigmaAPI } from './src/figma-api.js';
-import { CodeGenerator } from './src/code-generator.js';
+import { CodeGenerator } from './src/generators/CodeGenerator.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -36,7 +36,7 @@ async function main() {
     
     // 获取文件数据
     const fileData = await figmaAPI.getFile(config.figma.fileKey, config.figma.nodeId);
-    
+    // console.log("fileData: ", JSON.stringify(fileData));
     console.log('✅ 成功获取Figma设计稿数据');
     console.log(`📄 文件名: ${fileData.name}`);
 

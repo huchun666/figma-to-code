@@ -1,0 +1,82 @@
+/* CSS变量定义 */
+:root {
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --transition-base: 0.2s ease;
+}
+
+/* 基础重置样式 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.section {
+  box-sizing: border-box;
+  background-color: rgba(243, 255, 227, 1);
+  border-radius: 16px;
+  padding: 0px 128px 0px 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  overflow: visible;
+}
+
+.text-eyebrow {
+  width: 138px;
+  height: 40px;
+  font-family: Inter, sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 0px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 1);
+  width: 100%;
+  height: 100%;
+  display: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* .text-title 使用与 .text-eyebrow 相同的样式 */
+
+/* .description 使用与 .text-eyebrow 相同的样式 */
+
+.content-button {
+  box-sizing: border-box;
+  background-color: rgba(51, 223, 223, 1);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm) var(--spacing-md);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm);
+  overflow: hidden;
+}
+
+/* .cta 使用与 .text-eyebrow 相同的样式 */
+
+/* .node-I20-9731-41-24-41-27 使用与 .text-eyebrow 相同的样式 */
