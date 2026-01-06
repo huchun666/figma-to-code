@@ -1,0 +1,14 @@
+{
+  "figma": {
+    "accessToken": "YOUR_FIGMA_ACCESS_TOKEN_HERE",
+    "fileKey": "lGA3ygEIM64OR0ahOLwjlt",
+    "nodeId": "1648-27416"
+  },
+  "output": {
+    "format": "react",
+    "outputDir": "./output",
+    "cssFramework": "none",
+    "useTypeScript": true,
+    "componentize": true
+  }
+}

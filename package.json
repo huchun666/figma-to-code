@@ -1,0 +1,22 @@
+{
+  "name": "figma-to-code",
+  "version": "1.0.0",
+  "description": "自动化将Figma设计稿还原成前端代码的工具",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "convert": "node index.js"
+  },
+  "keywords": [
+    "figma",
+    "design-to-code",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "fs-extra": "^11.1.1"
+  }
+}
