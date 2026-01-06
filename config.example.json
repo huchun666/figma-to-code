@@ -1,8 +1,8 @@
 {
   "figma": {
     "accessToken": "YOUR_FIGMA_ACCESS_TOKEN_HERE",
-    "fileKey": "lGA3ygEIM64OR0ahOLwjlt",
-    "nodeId": "1648-27416"
+    "fileKey": "YOUR_FIGMA_FILE_KEY_HERE",
+    "nodeId": "YOUR_FIGMA_NODE_ID_HERE"
   },
   "output": {
     "format": "react",
