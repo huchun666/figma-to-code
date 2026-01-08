@@ -9,6 +9,7 @@
     "outputDir": "./output",
     "cssFramework": "none",
     "useTypeScript": true,
-    "componentize": true
+    "componentize": true,
+    "componentName": ""
   }
 }

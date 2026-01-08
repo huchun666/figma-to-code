@@ -23,6 +23,7 @@ export class CodeGenerator {
     this.cssFramework = config.cssFramework || 'none';
     this.useTypeScript = config.useTypeScript !== false;
     this.componentize = config.componentize !== false;
+    this.componentName = config.componentName || null; // 自定义组件名
     
     // 状态管理
     this.interactiveElements = new Map();
@@ -66,7 +67,10 @@ export class CodeGenerator {
     
     // 预处理Figma数据
     const processedData = preprocessNode(figmaData);
-    const componentName = toPascalCase(processedData.name || 'Component');
+    // 优先使用配置的组件名，否则使用Figma节点名称，最后使用默认值
+    const componentName = this.componentName 
+      ? toPascalCase(this.componentName)
+      : toPascalCase(processedData.name || 'Component');
     
     // 分析交互元素
     this.analyzeInteractiveElements(processedData);
